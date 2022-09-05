@@ -70,12 +70,11 @@ public class WalletTest {
 
         Wallet enji = new Wallet();
         enji.insertCoin(100);
-        //enji.insertCoin(500);
-        //enji.insertCoin(1000);
-        //enji.insertCoin(100);
-        //enji.takeCoin(100);
-        //enji.insertCoin(500);
-        Assert.assertEquals(100, enji.calculateCoins());
+        enji.insertCoin(500);
+        enji.insertCoin(1000);
+        enji.insertCoin(100);
+        enji.takeCoin(100);
+        Assert.assertEquals(1600, enji.calculateCoins());
 
 
     }

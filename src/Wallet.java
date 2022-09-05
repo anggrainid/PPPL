@@ -74,7 +74,7 @@ public class Wallet {
         int total = 0;
 
         for (Integer key : this.coins.keySet()){
-            total = key + this.coins.get(key);
+            total += key * this.coins.get(key);
         }
         return total;
     }
