@@ -32,6 +32,14 @@ public class LibraryHelper {
     public List<Book> totalBook(int tujuanBookId){
 
         List<Book> allBooks = service.getAllBooks();
+//        int count = 0;
+//        for (int i = 0; i< allBooks.size(); i++){
+//            Book book = allBooks.get(i);
+//            if (book.bookId == tujuanBookId){
+//                count++;
+//            }
+//        }
+//        return count;//
         List<Book> total = new ArrayList<Book>();
 
         for (int i = 0; i< allBooks.size(); i++){
@@ -42,6 +50,8 @@ public class LibraryHelper {
         }
 
         return total;
+
+
 
     }
 }
