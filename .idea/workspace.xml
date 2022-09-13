@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f51314b-f843-4b29-a59a-16eba33f7c2d" name="Changes" comment="Stub and Mock" />
+    <list default="true" id="0f51314b-f843-4b29-a59a-16eba33f7c2d" name="Changes" comment="Stub and Mock">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/LibraryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibraryHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LibraryHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LibraryHelperTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +63,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryHelperTest.testReturnToShelf">
+  <component name="RunManager" selected="JUnit.LibraryHelperTest.testTotalBook">
     <configuration name="LibraryHelperTest.searchBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryAppMock" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,8 +84,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryHelperTest.testTotalBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryAppMock" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LibraryHelperTest" />
+      <option name="METHOD_NAME" value="testTotalBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryHelperTest.testTotalBook" />
         <item itemvalue="JUnit.LibraryHelperTest.testReturnToShelf" />
         <item itemvalue="JUnit.LibraryHelperTest.searchBook" />
       </list>
@@ -98,7 +113,7 @@
       <workItem from="1663008193531" duration="1557000" />
       <workItem from="1663013909528" duration="208000" />
       <workItem from="1663048091176" duration="48000" />
-      <workItem from="1663048366921" duration="4047000" />
+      <workItem from="1663048366921" duration="5422000" />
     </task>
     <task id="LOCAL-00001" summary="Stub and Mock">
       <created>1663052260410</created>
@@ -114,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663052508918</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Stub and Mock">
+      <created>1663053056212</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1663053056212</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

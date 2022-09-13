@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
 
 public class LibraryHelper {
 
@@ -28,5 +27,21 @@ public class LibraryHelper {
         if (book.shelfId.equals(tujuanShelfId)){
             this.service.returnBookToShelf(book.barcode); //panggil returnBookToShelfnya LibraryServiceImpl
         }
+    }
+
+    public List<Book> totalBook(int tujuanBookId){
+
+        List<Book> allBooks = service.getAllBooks();
+        List<Book> total = new ArrayList<Book>();
+
+        for (int i = 0; i< allBooks.size(); i++){
+            Book book = allBooks.get(i);
+            if (book.bookId == tujuanBookId){
+                total.add(book);
+            }
+        }
+
+        return total;
+
     }
 }

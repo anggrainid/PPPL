@@ -43,4 +43,23 @@ class LibraryHelperTest {
         verify(service).returnBookToShelf("Barcode1");
 
     }
+
+    @Test
+    void testTotalBook(){
+
+        LibraryServiceImpl service = mock(LibraryServiceImpl.class);
+        LibraryHelper helper = new LibraryHelper(service);
+
+        List<Book> dummyBooks = new ArrayList<>();
+        Book book1 = new Book(1, "Laskar Pelangi", "LP-01");
+        Book book2 = new Book(1, "Laskar Pelangi", "LP-02");
+        Book book3 = new Book(1, "Laskar Pelangi", "LP-03");
+        dummyBooks.add(book1);
+        dummyBooks.add(book2);
+        dummyBooks.add(book3);
+
+        when(service.getAllBooks()).thenReturn(dummyBooks);
+        Assert.assertEquals(3, helper.totalBook(1).size());
+        //helper.totalBook(1);
+    }
 }
