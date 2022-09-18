@@ -1,3 +1,8 @@
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
+
 public class Book {
     int bookId;
     String title;
@@ -7,6 +12,16 @@ public class Book {
     String studentID;
     String shelfId;
     int fine;
+
+    public Date getDateBorrowed() {
+        return dateBorrowed;
+    }
+
+    public void setDateBorrowed(Date dateBorrowed) {
+        this.dateBorrowed = dateBorrowed;
+    }
+
+    Date dateBorrowed;
 
     public int getBookId() {
         return bookId;
@@ -70,6 +85,22 @@ public class Book {
 
     public void setFine(int fine) {
         this.fine = fine;
+    }
+
+    public Date deadline() throws Exception{
+
+        if (isBorrowed){
+
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(dateBorrowed);
+            cal.add(Calendar.DATE, loanPeriod);
+            Date deadline = cal.getTime();
+
+            return deadline;
+        }else {
+            Date nolimit = new SimpleDateFormat("dd/mm/yyyy").parse("00/00/0000");
+            return nolimit;
+        }
     }
 
     public Book(int bookId, String title, String barcode){

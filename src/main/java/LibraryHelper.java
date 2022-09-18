@@ -1,4 +1,7 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 public class LibraryHelper {
@@ -32,14 +35,6 @@ public class LibraryHelper {
     public List<Book> totalBook(int tujuanBookId){
 
         List<Book> allBooks = service.getAllBooks();
-//        int count = 0;
-//        for (int i = 0; i< allBooks.size(); i++){
-//            Book book = allBooks.get(i);
-//            if (book.bookId == tujuanBookId){
-//                count++;
-//            }
-//        }
-//        return count;//
         List<Book> total = new ArrayList<Book>();
 
         for (int i = 0; i< allBooks.size(); i++){
@@ -51,7 +46,74 @@ public class LibraryHelper {
 
         return total;
 
+    }
 
+    public Boolean isOverdue (String barcode, Date dateReturn) throws Exception {
+        Book book = this.service.findBook(barcode);
+
+        if (book.deadline().before(dateReturn)){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public int totalFine (String barcode, int dayOverdue){
+        Book book = this.service.findBook(barcode);
+
+        int fine = book.fine;
+        int totalFine = fine * dayOverdue;
+        return totalFine;
+    }
+
+    public boolean HasToBuy(int bookId){
+        List<Book> allBooks = service.getAllBooks();
+        List<Book> SelectedBooks = new ArrayList<Book>();
+        List<Book> BorrowedSelectedBooks = new ArrayList<Book>();
+
+        for (int i = 0; i< allBooks.size(); i++){
+            Book book = allBooks.get(i);
+            if (book.bookId == bookId){
+                SelectedBooks.add(book);
+            }
+        }
+
+        for (Book selectBook : SelectedBooks) {
+            if (selectBook.isBorrowed == true){
+                BorrowedSelectedBooks.add(selectBook);
+            }
+        }
+
+        if (BorrowedSelectedBooks.size() == SelectedBooks.size()){
+            return true;
+        }else {
+            return false;
+        }
 
     }
-}
+    public void borrowBook(int bookId){
+        List<Book> allBooks = service.getAllBooks();
+
+        for (int i = 0; i< allBooks.size(); i++){
+            Book book = allBooks.get(i);
+            if (book.bookId == bookId){
+                this.service.borrowBook(book.barcode);
+                break;
+            }
+        }
+    }
+
+    public void reminder(Date today) throws Exception {
+        List<Book> allBooks = service.getAllBooks();
+
+
+        for (int i = 0; i< allBooks.size(); i++){
+            Book book = allBooks.get(i);
+                if (today.equals(book.deadline())){
+                    this.service.sendMessageToStudent(book.studentID);
+                }
+            }
+        }
+
+    }
