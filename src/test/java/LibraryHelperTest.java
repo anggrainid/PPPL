@@ -29,6 +29,7 @@ class LibraryHelperTest {
 
         when(service.getAllBooks()).thenReturn(dummyBooks);
 
+
         Assert.assertEquals(2, helper.searchBook("Seni").size());
     }
 
@@ -48,7 +49,7 @@ class LibraryHelperTest {
     }
 
     @Test
-    void testTotalBook(){
+    void testTotalAvailBook(){
 
         LibraryServiceImpl service = mock(LibraryServiceImpl.class);
         LibraryHelper helper = new LibraryHelper(service);
@@ -62,8 +63,7 @@ class LibraryHelperTest {
         dummyBooks.add(book3);
 
         when(service.getAllBooks()).thenReturn(dummyBooks);
-        Assert.assertEquals(3, helper.totalBook(1).size());
-        //helper.totalBook(1);
+        Assert.assertEquals(3, helper.totalAvailBook(1));
     }
 
     @Test

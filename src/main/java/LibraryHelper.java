@@ -1,6 +1,4 @@
-import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -32,23 +30,24 @@ public class LibraryHelper {
         }
     }
 
-    public List<Book> totalBook(int tujuanBookId){
+    public int totalAvailBook(int bookId){
 
         List<Book> allBooks = service.getAllBooks();
         List<Book> total = new ArrayList<Book>();
 
         for (int i = 0; i< allBooks.size(); i++){
             Book book = allBooks.get(i);
-            if (book.bookId == tujuanBookId){
+            if (book.bookId == bookId){
                 total.add(book);
             }
         }
 
-        return total;
+        return total.size();
 
     }
 
-    public Boolean isOverdue (String barcode, Date dateReturn) throws Exception {
+    public Boolean isOverdue (String barcode, Date dateReturn)
+            throws Exception {
         Book book = this.service.findBook(barcode);
 
         if (book.deadline().before(dateReturn)){

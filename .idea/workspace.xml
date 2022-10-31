@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f51314b-f843-4b29-a59a-16eba33f7c2d" name="Changes" comment="Stub and Mock">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Book.java" afterDir="false" />
+    <list default="true" id="0f51314b-f843-4b29-a59a-16eba33f7c2d" name="Changes" comment="Tugas Stub and Mock">
       <change beforePath="$PROJECT_DIR$/src/main/java/LibraryHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LibraryHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/LibraryHelperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LibraryHelperTest.java" afterDir="false" />
     </list>
@@ -64,13 +62,12 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryHelperTest.testReminder">
-    <configuration name="LibraryHelperTest.testBorrowBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LibraryHelperTest">
+    <configuration name="LibraryHelperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="LibraryAppMock" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LibraryHelperTest" />
-      <option name="METHOD_NAME" value="testBorrowBook" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -80,16 +77,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="LibraryHelperTest" />
       <option name="METHOD_NAME" value="testDeadline" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryHelperTest.testHasToBuy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LibraryAppMock" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="LibraryHelperTest" />
-      <option name="METHOD_NAME" value="testHasToBuy" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,13 +112,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LibraryHelperTest.testTotalFine" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="LibraryAppMock" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LibraryHelperTest" />
+      <option name="METHOD_NAME" value="testTotalFine" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryHelperTest" />
+        <item itemvalue="JUnit.LibraryHelperTest.testTotalFine" />
+        <item itemvalue="JUnit.LibraryHelperTest.testIsOverdue" />
         <item itemvalue="JUnit.LibraryHelperTest.testReminder" />
         <item itemvalue="JUnit.LibraryHelperTest.testDeadline" />
-        <item itemvalue="JUnit.LibraryHelperTest.testIsOverdue" />
-        <item itemvalue="JUnit.LibraryHelperTest.testBorrowBook" />
-        <item itemvalue="JUnit.LibraryHelperTest.testHasToBuy" />
       </list>
     </recent_temporary>
   </component>
@@ -148,7 +145,13 @@
       <workItem from="1663048091176" duration="48000" />
       <workItem from="1663048366921" duration="10025000" />
       <workItem from="1663472573466" duration="1277000" />
-      <workItem from="1663524222056" duration="14896000" />
+      <workItem from="1663524222056" duration="17826000" />
+      <workItem from="1663542448216" duration="437000" />
+      <workItem from="1663668030699" duration="9000" />
+      <workItem from="1665423853995" duration="51000" />
+      <workItem from="1665465631691" duration="1354000" />
+      <workItem from="1665467135770" duration="3348000" />
+      <workItem from="1667237726652" duration="147000" />
     </task>
     <task id="LOCAL-00001" summary="Stub and Mock">
       <created>1663052260410</created>
@@ -185,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663054748646</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tugas Stub and Mock">
+      <created>1663539219045</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1663539219045</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +227,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Stub and Mock" />
-    <option name="LAST_COMMIT_MESSAGE" value="Stub and Mock" />
+    <MESSAGE value="Tugas Stub and Mock" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tugas Stub and Mock" />
   </component>
 </project>
