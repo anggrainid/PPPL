@@ -48,7 +48,8 @@ public class WalletTest {
         enji.insertCoin(1000);
         enji.insertCoin(1000);
         Assert.assertSame(3,enji.coins.get(1000));
-        //Assert.assertTrue(enji.coins.get(1000) != null); //tidak valid karena <0> bukan null
+        //Assert.assertTrue(enji.coins.get(1000) != null);
+        // tidak valid karena <0> bukan null
 
     }
 
