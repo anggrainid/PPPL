@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pagesSearch.searchPage;
 import pagesSearch.searchResultPage;
 
-public class testCase {
+public class pagesSearchTest {
 
     private static WebDriver driver;
 

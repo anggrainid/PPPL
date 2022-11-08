@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="01a89859-e4ad-424e-8460-438bab9be687" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="01a89859-e4ad-424e-8460-438bab9be687" name="Changes" comment="latihan POM:googleSearch">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/pagesSauceDemo/inventoryPage.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/pagesSauceDemo/loginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesSearch/searchPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pagesSearch/searchResultPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pagesSauceDemoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pagesSearchTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,16 +46,27 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.45402297"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="testCase" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.pagesSauceDemoTest.loginTest">
+    <configuration name="pagesSauceDemoTest.loginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="PageObjectModel" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="testCase" />
+      <option name="MAIN_CLASS_NAME" value="pagesSauceDemoTest" />
+      <option name="METHOD_NAME" value="loginTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pagesSearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PageObjectModel" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="pagesSearchTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,7 +74,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.testCase" />
+        <item itemvalue="JUnit.pagesSauceDemoTest.loginTest" />
+        <item itemvalue="JUnit.pagesSearchTest" />
       </list>
     </recent_temporary>
   </component>
@@ -80,8 +87,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667888640787</updated>
-      <workItem from="1667888642675" duration="2421000" />
+      <workItem from="1667888642675" duration="3824000" />
     </task>
+    <task id="LOCAL-00001" summary="latihan POM:googleSearch">
+      <created>1667891225629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667891225629</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,5 +112,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="latihan POM:googleSearch" />
+    <option name="LAST_COMMIT_MESSAGE" value="latihan POM:googleSearch" />
   </component>
 </project>
