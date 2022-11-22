@@ -20,7 +20,7 @@ public class pagesFormyTest {
     }
 
     @Test
-    public void homeTest(){
+    public void formyTest(){
         homePage home_page = new homePage(driver);
         cwfPage cwf_page = home_page.clickLink();
         cwf_page.setFirst_name("Anggraini");

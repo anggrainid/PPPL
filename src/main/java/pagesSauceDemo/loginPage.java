@@ -3,6 +3,8 @@ package pagesSauceDemo;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.time.Duration;
+
 public class loginPage {
 
     private By username = new By.ByName("user-name");
@@ -11,7 +13,7 @@ public class loginPage {
 
     private WebDriver driver;
 
-    public loginPage(WebDriver driver) {
+    public loginPage(WebDriver driver, Duration duration) {
         this.driver = driver;
     }
 
